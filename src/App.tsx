@@ -1,26 +1,27 @@
+/* eslint-disable import/extensions */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter, Route, Routes,
+} from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import GlobalStyled from './GlobalStyled';
+import SignInPage from './Pages/AuthPages/SignInPage';
+import SignUpPage from './Pages/AuthPages/SignUpPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { AuthProvider } from './provider/auth';
+
+export default function App() {
+  return <>
+    <GlobalStyled />
+    <ToastContainer />
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/signIn'element={ <SignInPage />}/>
+          <Route path='/signUp' element={ <SignUpPage/> }/>
+          <Route path='*'/>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  </>;
 }
-
-export default App;
