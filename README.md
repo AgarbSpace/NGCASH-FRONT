@@ -4,7 +4,7 @@
 
 #### Este desafio consiste em criar uma rede onde seja possível os usuários realizarem transferências internas entre si.
 
-### Nesta parte do back-end utilizei a tecnologia ReactJS
+### Nesta parte do front-end utilizei a tecnologia ReactJS
 
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">🔗 ReactJs</a>
