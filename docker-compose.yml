@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  desafio_trybe_front_react:
+    build: .
+    container_name: desafio_trybe_front_react
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
+
+volumes:
+  volume_front:

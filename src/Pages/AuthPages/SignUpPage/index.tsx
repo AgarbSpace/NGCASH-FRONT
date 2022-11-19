@@ -39,10 +39,17 @@ export default function SignUpPage() {
       await api.signUp({ username: username.toLowerCase(), password });
       navigate('/signIn');
     } catch (error: Error | AxiosError | any) {
-      if (error.response) {
+      if (error.response.data.message) {
         setMessage({
           type: 'error',
-          text: error.response.data,
+          text: error.response.data.message,
+        });
+        return;
+      }
+      if (error.responsee) {
+        setMessage({
+          type: 'error',
+          text: error.response.message,
         });
         return;
       }
