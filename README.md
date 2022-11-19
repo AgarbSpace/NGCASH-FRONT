@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Desafio NG.CASH <> TRYBE FRONT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Estre é o repositório do front-end do desafio de projeto web fullstack do processo seletivo da NG Cash.
 
-## Available Scripts
+#### Este desafio consiste em criar uma rede onde seja possível os usuários realizarem transferências internas entre si.
 
-In the project directory, you can run:
+### Nesta parte do back-end utilizei a tecnologia ReactJS
 
-### `npm start`
+<h1 align="center">
+    <a href="https://pt-br.reactjs.org/">🔗 ReactJs</a>
+</h1>
+<p align="center">🚀 Lib para construir interfaces de usuário com componentes reutilizáveis</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Para rodar esse projeto localmente, primeiro precisa certificar que tenha o nodeJs instalado na máquina.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Clone este projeto e dê o comando `npm i` para instalar a dependências.
 
-### `npm test`
+#### Para iniciar, dê o comando `npm run start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Para iniciar através do docker, dê `docker compose up --build`, primeiramente ele vai apontar um erro de permissão do eslint que eu não consegui resolver (podem mandar sujestões), mas, se após indicar o erro você editar qualquer coisa no código e dar `ctrl + z`, ele compila no Docker sem erro, você só precisa acessar `http://localhost:3000` no seu navegador.
 
-### `npm run build`
+### Clique abaixo para ir para o repositório do Back-End
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h4 align="center">
+    <a href="https://github.com/AgarbSpace/PS-NGCASH-BACK">🔗 Back-End</a>
+</h4>
