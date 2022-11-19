@@ -13,6 +13,10 @@ export const Form = styled.form`
   border-radius: 25px;
   background-color: #FFFFFF;
 
+  @media (max-height: 750px){
+    width: 90%;
+  }
+
   a{
     text-align: center;
     text-decoration: none;
@@ -34,11 +38,17 @@ export const Input = styled.input`
   align-items: center;
 
   border: none;
+  border-bottom: 4px solid #000000;
   border-radius: 25px;
-  background-color: #999999;
+
+  color: #000000;
+  font-size: 25px;
+
+  padding-left: 15px;
+  
 
   ::placeholder {
-    color: #FFFFFF;
+    color: #000000;
     padding-left: 15px;
     font-size: 25px;
   }

@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { useContext } from 'react';
 import { AuthContext } from '../provider/auth';
 
